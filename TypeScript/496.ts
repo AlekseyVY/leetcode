@@ -17,7 +17,7 @@ function nextGreaterElement(nums1: number[], nums2: number[]): number[] {
       hash.set(val, -1);
   }
   for(let i = 0; i < nums1.length; i++) {
-      result.push(hash.get(nums1[i]));
+      result.push(hash.get(nums1[i])  as number);
   }
   return result;
 };

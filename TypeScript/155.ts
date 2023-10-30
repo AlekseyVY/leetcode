@@ -10,9 +10,9 @@ class MinStack {
 
   push(val: number): void {
       if(this.size === 0) {
-          this.stack.push({ val, min: val })
+          this.stack.push({ val, min: val });
       } else {
-          this.stack.push({ val, min: Math.min(this.stack[this.size - 1].min, val)})
+          this.stack.push({ val, min: Math.min(this.stack[this.size - 1].min, val)});
       }
       this.size++;
   }
@@ -27,6 +27,6 @@ class MinStack {
   }
 
   getMin(): number {
-      return this.stack[this.size - 1].min
+      return this.stack[this.size - 1].min;
   }
 }
