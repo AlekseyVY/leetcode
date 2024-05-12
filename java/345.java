@@ -15,7 +15,7 @@ class Solution {
               }
               char tmp = s.charAt(r);
               sc[r] = s.charAt(l);
-              sc[l] = tmp
+              sc[l] = tmp;
               r--;
           }
           l++;
